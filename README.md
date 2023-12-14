@@ -6,7 +6,6 @@ Meal Mate is a mobile application developed using React Native and Expo. This ap
 Meal Mate utilizes the Spoonacular API to access a variety of recipes. It allows creators to post their recipes and enables users to bookmark their favorites. This template is designed to provide a practical framework for implementing real-world application features such as API integration, user interaction, and data management within a mobile app environment.
 
 By leveraging the capabilities of React Native and Expo, Meal Mate aims to offer an immersive experience in mobile app development, focusing on modern functionalities and seamless API integration.
-r
 
 ## Prerequisites
 
@@ -21,8 +20,8 @@ Before starting with Meal Mate, ensure you have the following installed:
 ### 1. Clone the Repository
 Clone the Meal Mate repository to your local machine using the following command:
 ```bash
-git clone [https://github.com/amazzHub/meal-mate-scaffold.git]
-cd [https://github.com/amazzHub/meal-mate-scaffold.git]
+git clone https://github.com/amazzHub/meal-mate-scaffold.git
+cd https://github.com/amazzHub/meal-mate-scaffold.git
 ```
 
 ### 2. Install Dependencies
