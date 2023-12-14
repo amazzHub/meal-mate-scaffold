@@ -32,12 +32,23 @@ export const TrendingRecipesList: React.FC<Props> = () => {
     );
 
     // const keyExtractor = (item: Recipe, index: number): string => `${item._id}_${index.toString()}`;
-    // const renderItem = ({ item }: { item: Recipe }): JSX.Element => <Component/>;
+    // const renderItem = ({ item }: { item: Recipe }): JSX.Element => <SomeComponent/>;
+    // const renderItem = useCallback(
+    //     ({ item }: { item: Recipe }) => {
+    //         return <SomeComponent data={item} />;
+    //     },
+    //     []
+    // );
     // const renderSeparator = (): JSX.Element => <View style={{ marginRight: 20 }} />;
 
     if (isLoading) {
         return <ActivityIndicator size={'large'} color={colors.primary} />
     }
+
+    //* We are using the FlatList to render the list of trending recipes
+    //* By adding the 'horizontal' prop, we're able to render the list horizontally
+    //* We are using the functions above to avoid unnecessary re-renders, otherwise a new function is created for renderItem
+    //* The renderItem is using the useCallback hook to maintain a consistent reference across re-renders unless its dependencies change. 
 
     return <>
         <Text style={styles.title}>Trending now 🔥</Text>

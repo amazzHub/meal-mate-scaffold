@@ -1,4 +1,4 @@
-import { ActivityIndicator, FlatList, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text } from 'react-native';
 import { Creator } from '../../../types/models';
 import { useEffect, useState } from 'react';
 import { colors } from '../../../constants/colors';
@@ -33,8 +33,7 @@ export const PopularCreatorsList: React.FC<Props> = () => {
     //TODO: Use a FlatList to render the list of popular creators creators
     //TODO: The list should be horizontal just like the design on Figma
     //TODO: Check TrendingRecipeList for reference
-    //TODO: Use the functions above with in the renderItem to get a much cleaner code 
-
+    //TODO: Use the functions above with in the renderItem to get a much cleaner code, make sure to use suitable hooks to optimise performance
     return <>
         <Text style={styles.title}>Popular creators 🎉</Text>
 
