@@ -12,7 +12,7 @@ export const PopularCreatorsList: React.FC<Props> = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [creators, setCreators] = useState<Creator[]>([]);
 
-    //TODO: Use this useEffect to fetch the popular creators when the component is mounted
+    //TODO: Use this useEffect to fetch the popular creators when the component is mounted (make sure to use /creators/popular)
     //TODO: Take advantage of the isLoading state to display a loader upon fetching the data, this improves user experience
 
     useEffect(
