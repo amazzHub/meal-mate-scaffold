@@ -23,6 +23,6 @@ const fetchTrendingRecipes = () => {
 //* Popular creators route: /creators/popular
 //* To get a creator for the profile screen: /creators/random
 
-export const recipesApi = {
+export const mealMateApi = {
     fetchTrendingRecipes,
 };
