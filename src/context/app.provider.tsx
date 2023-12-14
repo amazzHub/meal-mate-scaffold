@@ -7,13 +7,20 @@ const AppContext = createContext<AppContextType>(initialAppState);
 
 export const AppProvider = ({ children }: any) => {
 
+    //? What is the  useReducer?:
+    //* - useReducer is a hook that's used for state management in React
+    //* - It's an alternative to useState, particularly useful when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.
+    //* - state is the current state of your app as defined by the reducer.
+
+    //* - The hook receives two arguments: a reducer function (appReducer) and the initial state (initialAppState).
+    //* - dispatch is a method you can call to update the state, by 'dispatching' an action. This action is then handled by your reducer function.
+    //* - useReducer returns an array with two elements: the current state and a dispatch function.
     const [state, dispatch] = useReducer(appReducer, initialAppState);
 
     //? Benefits for using useCallback below:
     //* - React will check the reference of the dispatch function.
     //* - If the reference of dispatch hasn't changed since the last render, React will provide the same memoized the handleBookmarkRecipe function and other functions.
     //* - If the dispatch reference changes (which is rare, as it typically comes from useReducer or useContext and does not change often), React will create a new handleBookmarkRecipe function (or others).
-
     const handleBookmarkRecipe = useCallback(
         (recipe: Recipe) => {
             dispatch(

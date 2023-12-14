@@ -1,6 +1,8 @@
 import { AppActionsTypes } from "../types/enums";
 import { AppContextType, Recipe } from "../types/models";
 
+//* - This file defines the reducer and the initial state for the application's context.
+
 export const initialAppState: AppContextType = {
     bookmarkedRecipes: {},
     handleBookmarkRecipe: (_recipe: Recipe) => { },
