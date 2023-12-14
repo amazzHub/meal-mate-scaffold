@@ -7,7 +7,7 @@ type Props = {
 export const ProfileScreen: React.FC<Props> = (props) => {
 
     return <View style={styles.container}>
-        <Text>profile.screen</Text>
+        <Text>Profile Screen</Text>
     </View>;
 };
 
